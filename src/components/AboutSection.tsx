@@ -190,7 +190,8 @@ export const AboutSection: React.FC = () => {
     {/* CEO Card */}
     <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
       <img
-        src="https://drive.google.com/uc?export=view&id=1Zf3nsrFT5oufwfm3rrAvx9AWGS1HSvi0"
+        src="src="/assets/lombe.jpg"
+"
         alt="Mr. LOMBE ANDREW - CEO"
         className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover border-4 border-[#C59B4B] shadow-xl"
         referrerPolicy="no-referrer"
@@ -210,7 +211,8 @@ export const AboutSection: React.FC = () => {
     {/* COO Card */}
     <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
       <img
-        src="https://drive.google.com/uc?export=view&id=1OD6mvdvkD1q8eJCA9D80NcR95YPVKbyR"
+        src="src="/assets/gift.jpg"
+"
         alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
         className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover border-4 border-[#C59B4B] shadow-xl"
         referrerPolicy="no-referrer"
