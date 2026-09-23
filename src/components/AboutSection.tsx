@@ -189,7 +189,7 @@ export const AboutSection: React.FC = () => {
 
     {/* CEO */}
     <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      /assets/lombe.jpg
+      public/assets/lombe.jpg
 
       <div className="mt-6">
         <h4 className="font-bold text-[#0A2240] text-2xl">
@@ -204,7 +204,7 @@ export const AboutSection: React.FC = () => {
 
     {/* COO */}
     <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      /assets/gift.jpg
+      public/assets/gift.jpg
 
       <div className="mt-6">
         <h4 className="font-bold text-[#0A2240] text-2xl">
