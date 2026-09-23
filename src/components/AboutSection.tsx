@@ -187,15 +187,9 @@ export const AboutSection: React.FC = () => {
 
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
 
-    {/* CEO Card */}
-    <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
-      <img
-        src="src="/assets/lombe.jpg"
-
-        alt="Mr. LOMBE ANDREW - CEO"
-        className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover border-4 border-[#C59B4B] shadow-xl"
-        referrerPolicy="no-referrer"
-      />
+    {/* CEO */}
+    <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+      /assets/lombe.jpg
 
       <div className="mt-6">
         <h4 className="font-bold text-[#0A2240] text-2xl">
@@ -208,15 +202,9 @@ export const AboutSection: React.FC = () => {
       </div>
     </div>
 
-    {/* COO Card */}
-    <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
-      <img
-        src="src="/assets/gift.jpg"
-
-        alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
-        className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover border-4 border-[#C59B4B] shadow-xl"
-        referrerPolicy="no-referrer"
-      />
+    {/* COO */}
+    <div className="bg-white rounded-3xl border border-[#E8E2D5] p-8 shadow-md flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+      /assets/gift.jpg
 
       <div className="mt-6">
         <h4 className="font-bold text-[#0A2240] text-2xl">
@@ -231,6 +219,7 @@ export const AboutSection: React.FC = () => {
 
   </div>
 </div>
+
 
 
         </div>
