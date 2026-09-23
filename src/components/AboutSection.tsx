@@ -188,8 +188,8 @@ export const AboutSection: React.FC = () => {
               {/* CEO Card */}
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
-                  src="https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/lombe.jpg"
-                  alt="  https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/lombe.jpg        "
+                  src="https://drive.google.com/file/d/1AVYItxK2d2eV9TuntzmCu72k5jRFK7P9/view?usp=drivesdk"
+                  alt="  MR LOMBE ANDREW CEO        "
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
                 />
@@ -201,7 +201,7 @@ export const AboutSection: React.FC = () => {
               {/* COO Card */}
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1OD6mvdvkD1q8eJCA9D80NcR95YPVKbyR"
+                  src="https://drive.google.com/file/d/1uobU_AbW2RCGCS8pLvrNgNTZqnCcpELq/view?usp=drivesdk"
                   alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
