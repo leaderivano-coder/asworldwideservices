@@ -201,7 +201,7 @@ export const AboutSection: React.FC = () => {
               {/* COO Card */}
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
-                  src="https://drive.google.com/file/d/1uobU_AbW2RCGCS8pLvrNgNTZqnCcpELq/view?usp=drivesdk"
+                  src="https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/gift.jpg"
                   alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
