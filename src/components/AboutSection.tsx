@@ -188,7 +188,7 @@ export const AboutSection: React.FC = () => {
               {/* CEO Card */}
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1Zf3nsrFT5oufwfm3rrAvx9AWGS1HSvi0"
+                  src="https://postimg.cc/0MP1Lcx8"
                   alt="Mr. LOMBE ANDREW - CEO"
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
@@ -201,7 +201,7 @@ export const AboutSection: React.FC = () => {
               {/* COO Card */}
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1OD6mvdvkD1q8eJCA9D80NcR95YPVKbyR"
+                  src="https://postimg.cc/Lnr7cNBg"
                   alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
