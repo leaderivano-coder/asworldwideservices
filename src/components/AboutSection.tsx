@@ -189,7 +189,7 @@ export const AboutSection: React.FC = () => {
               <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
                 <img
                   src="https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/lombe.jpg"
-                  alt=""
+                  alt="  https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/lombe.jpg        "
                   className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
                   referrerPolicy="no-referrer"
                 />
