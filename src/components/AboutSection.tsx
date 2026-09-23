@@ -219,7 +219,7 @@ export const AboutSection: React.FC = () => {
                 <div className="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
                   <div className="aspect-[4/5] overflow-hidden bg-slate-50 relative border-b border-slate-100">
                     <img 
-                      src="https://lh3.googleusercontent.com/d/1vAk79gb0eC7Ek2XmeiiDEtIcgy2kSHoU" 
+                      src="https://drive.google.com/file/d/1uobU_AbW2RCGCS8pLvrNgNTZqnCcpELq/view?usp=drivesdk" 
                       alt="Mr. Ssenjobe Samuel" 
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
