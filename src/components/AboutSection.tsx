@@ -216,27 +216,6 @@ export const AboutSection: React.FC = () => {
 
 
 
-{/* Card 4: CEO */}
-                <div className="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
-                  <div className="aspect-[4/5] overflow-hidden bg-slate-50 relative border-b border-slate-100">
-                    <img 
-                      src="https://lh3.googleusercontent.comd/1AVYItxK2d2eV9TuntzmCu72k5jRFK7P9" 
-                      alt="Mr. LOMBE ANDREW" 
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    />
-                  </div>
-                  <div className="p-5 flex-1 flex flex-col justify-center">
-                    <div className="space-y-1.5">
-                      <h5 className="font-display font-black text-slate-900 text-base md:text-lg leading-snug group-hover:text-[#0047ab] transition-colors duration-200">
-                        Mr.LOMBE ANDREW 
-                      </h5>
-                      <p className="text-xs md:text-sm font-bold text-[#0047ab] dark:text-blue-400">
-                        CEO
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
 
 
