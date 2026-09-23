@@ -179,40 +179,45 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-{/* Corporate Leadership Sub-Section */}
-          <div className="pt-10 mt-10 border-t border-[#E8E2D5]">
-            <h3 className="font-agency-serif text-2xl sm:text-3xl font-bold text-[#0A2240] text-center mb-10">
-              Corporate Leadership
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* CEO Card */}
-              <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
-                <img
-                  src="https://drive.google.com/file/d/1AVYItxK2d2eV9TuntzmCu72k5jRFK7P9/view?usp=drivesdk"
-                  alt="  MR LOMBE ANDREW CEO        "
-                  className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
-                  referrerPolicy="no-referrer"
-                />
-                <div>
-                  <h4 className="font-bold text-[#0A2240] text-lg">Mr. LOMBE ANDREW</h4>
-                  <p className="text-[#C59B4B] font-medium text-sm">Chief Executive Officer (CEO)</p>
-                </div>
-              </div>
-              {/* COO Card */}
-              <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
-                <img
-                  src="https://github.com/leaderivano-coder/asworldwideservices/blob/main/public/assets/gift.jpg"
-                  alt="Miss KIRABO KIGGUNDU NANTONGO - COO"
-                  className="w-24 h-24 rounded-full object-cover border border-[#E8E2D5]"
-                  referrerPolicy="no-referrer"
-                />
-                <div>
-                  <h4 className="font-bold text-[#0A2240] text-lg">Miss KIRABO KIGGUNDU NANTONGO</h4>
-                  <p className="text-[#C59B4B] font-medium text-sm">Chief Operating Officer (COO)</p>
-                </div>
-              </div>
-            </div>
-          </div>
+{/* Corporate Leadership */}
+<div className="pt-10 mt-10 border-t border-[#E8E2D5]">
+  <h3 className="font-agency-serif text-2xl sm:text-3xl font-bold text-[#0A2240] text-center mb-10">
+    Corporate Leadership
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    {/* CEO */}
+    <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
+      https://drive.google.com/uc?export=view&id=1AVYItxK2d2eV9TuntzmCu72k5jRFK7P9
+
+      <div>
+        <h4 className="font-bold text-[#0A2240] text-lg">
+          Mr. Lombe Andrew
+        </h4>
+        <p className="text-[#C59B4B] font-medium">
+          Chief Executive Officer (CEO)
+        </p>
+      </div>
+    </div>
+
+    {/* COO */}
+    <div className="bg-white rounded-2xl border border-[#E8E2D5] p-6 shadow-sm flex items-center gap-6">
+      https://drive.google.com/uc?export=view&id=1uobU_AbW2RCGCS8pLvrNgNTZqnCcpELq
+
+      <div>
+        <h4 className="font-bold text-[#0A2240] text-lg">
+          Miss Kirabo Kiggundu Nantongo
+        </h4>
+        <p className="text-[#C59B4B] font-medium">
+          Chief Operating Officer (COO)
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 {/* Card 4: CEO */}
