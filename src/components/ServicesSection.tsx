@@ -9,9 +9,7 @@ import {
   Check,
   MessageCircle,
   ArrowRight,
-  Plane,
-  PackageCheck,
-  FileCheck
+  Play
 } from 'lucide-react';
 
 interface ServicesSectionProps {
@@ -21,6 +19,35 @@ interface ServicesSectionProps {
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry }) => {
   const { t } = useLanguage();
+
+  // Video IDs matched to services
+  const serviceVideos: Record<string, { id: string; title: string }> = {
+    'study-abroad': {
+      id: 'jO9XL6zRI_Y',
+      title: 'Study in China & Scholarships'
+    },
+    'sourcing-china': {
+      id: 'r0eP71b9t7M',
+      title: 'Product Sourcing from China'
+    },
+    'quality-checking': {
+      id: 'Pakc-grLzsw',
+      title: 'Quality Inspection & Assurance'
+    },
+    'work-visas': {
+      id: 'jyxMKArihKk',
+      title: 'Work Permits & Visas'
+    },
+    'translation-services': {
+      id: '9ULMc5ZgfAs',
+      title: 'Translation & Business Support'
+    },
+    'overview': {
+      id: '9ULMc5ZgfAs',
+      title: 'A\'s World Wide Services — Full Overview'
+    }
+  };
+
   const services = [
     {
       id: 'study-abroad',
@@ -114,7 +141,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
     <section id="services" className="py-20 sm:py-28 bg-[#FAF8F5]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         
-        {/* Section Header - Ample, calm, dignified */}
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#C59B4B]/40 text-xs font-bold text-[#0A2240] tracking-wider uppercase">
             <span>{t('services.badge')}</span>
@@ -129,17 +156,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
           </p>
         </div>
 
-        {/* Ample, Uncrowded Service Cards with Sculpted Slanted Corners */}
+        {/* Service Cards — Each with its own video */}
         <div className="space-y-10">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const IconComponent = service.icon;
+            const video = serviceVideos[service.id];
+            
             return (
               <div
                 key={service.id}
                 id={`service-${service.id}`}
                 className="bg-white rounded-tl-[40px] rounded-br-[40px] rounded-tr-2xl rounded-bl-2xl p-7 sm:p-10 border border-[#E8E2D5] shadow-xs hover:shadow-xl hover:border-[#C59B4B]/60 transform transition-all duration-300 hover:scale-[1.012] will-change-transform space-y-7"
               >
-                {/* Card Top: Category, Icon & Title */}
+                {/* Card Top */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#FAF8F5] pb-6">
                   <div className="flex items-start gap-4">
                     <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-tl-2xl rounded-br-2xl rounded-tr-lg rounded-bl-lg bg-[#0A2240] text-white flex items-center justify-center shrink-0 shadow-sm border border-[#C59B4B]/40">
@@ -155,7 +184,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
                     </div>
                   </div>
 
-                  {/* Direct Action Button */}
                   <button
                     onClick={() => onOpenInquiry(service.title)}
                     className="self-start sm:self-center inline-flex items-center gap-2 bg-[#FAF8F5] hover:bg-[#0A2240] text-[#0A2240] hover:text-white font-bold text-xs sm:text-sm px-4.5 py-2.5 rounded-xl border border-[#E8E2D5] hover:border-[#0A2240] transition-all cursor-pointer whitespace-nowrap"
@@ -165,7 +193,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
                   </button>
                 </div>
 
-                {/* Main Explanation & Human Touch note */}
+                {/* Description & Human Touch */}
                 <div className="space-y-4">
                   <p className="text-base sm:text-lg text-slate-700 leading-[1.7] font-normal">
                     {service.description}
@@ -177,7 +205,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
                   </div>
                 </div>
 
-                {/* Operations & Goods Image Showcase */}
+                {/* Image Showcase */}
                 {service.image && (
                   <div className="relative rounded-2xl overflow-hidden border border-[#E8E2D5] bg-slate-100 aspect-[16/7] sm:aspect-[21/9] shadow-xs group/img">
                     <img
@@ -198,7 +226,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
                   </div>
                 )}
 
-                {/* Clear Bullet Features (Uncluttered, comfortable spacing) */}
+                {/* 🎥 VIDEO — Inside this service card */}
+                {video && (
+                  <div className="bg-[#FAF8F5] rounded-2xl p-4 sm:p-5 border border-[#E8E2D5]">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Play className="w-4 h-4 text-[#C59B4B]" />
+                      <span className="text-sm font-bold text-[#0A2240]">{video.title}</span>
+                    </div>
+                    <div className="aspect-video w-full rounded-xl overflow-hidden border border-white/50 shadow-sm">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title={video.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full border-0"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Features */}
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-[#0A2240]/80 mb-3">
                     What is included:
@@ -220,7 +267,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenInquiry 
           })}
         </div>
 
-        {/* Ample bottom consultation invite */}
+        {/* 🎬 BONUS: Overview Video — At the bottom before CTA */}
+        <div className="mt-16 bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E2D5] shadow-sm">
+          <div className="text-center mb-5">
+            <h3 className="font-agency-serif text-xl sm:text-2xl font-bold text-[#0A2240]">
+              Complete Company Overview
+            </h3>
+            <p className="text-sm text-slate-500 mt-1">See everything we do in one video</p>
+          </div>
+          <div className="max-w-2xl mx-auto aspect-video rounded-xl overflow-hidden border border-[#E8E2D5]">
+            <iframe
+              src={`https://www.youtube.com/embed/${serviceVideos.overview.id}`}
+              title={serviceVideos.overview.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full border-0"
+            />
+          </div>
+        </div>
+
+        {/* Bottom CTA */}
         <div className="mt-14 p-8 sm:p-10 rounded-3xl bg-[#0A2240] text-white text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 border-2 border-[#C59B4B]/30 shadow-md">
           <div className="space-y-2 max-w-xl">
             <h3 className="font-agency-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">
